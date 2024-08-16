@@ -15,10 +15,10 @@ void print_arr(int arr[], size_t len) {
 }
 
 int main() {
-    int arr[10] = { -1, 10, 8, 67, -66, 0, 67, 50, -7, 88 };
+    int arr[] = { -1, 10, 8, 67, -66, 0, 67, 50, -7, 88 };
     print_arr(arr, 10);
 
-    bubble_sort(arr, 10);
+    insertion_sort(arr, 10);
     print_arr(arr, 10);
 
     return 0;
