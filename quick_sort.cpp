@@ -10,7 +10,7 @@ void print_arr2(int arr[], size_t len) {
     std::cout << std::endl;
 }
 
-int partition(int arr[], int start, int end) {
+size_t partition(int arr[], size_t start, size_t end) {
     int pivot = arr[end-1];
     int pos = start;
 
@@ -25,12 +25,12 @@ int partition(int arr[], int start, int end) {
     return pos;
 }
 
-void _quick_sort(int arr[], int low, int high) {
+void _quick_sort(int arr[], size_t low, size_t high) {
 
     if (low >= high)
         return;
 
-    int pi = partition(arr, low, high);
+    size_t pi = partition(arr, low, high);
 
     _quick_sort(arr, low, pi);
     _quick_sort(arr, pi+1, high);
