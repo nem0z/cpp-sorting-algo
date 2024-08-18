@@ -6,5 +6,6 @@
 
 void bubble_sort(int arr[], size_t len);
 void insertion_sort(int arr[], size_t len);
+void quick_sort(int arr[], size_t len);
 
 #endif // ALGO_HPP
