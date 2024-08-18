@@ -1,15 +1,5 @@
 #include "algo.hpp"
 
-#include <iostream>
-
-void print_arr2(int arr[], size_t len) {
-    for (size_t i = 0; i < len; ++i) {
-        std::cout << arr[i] << " ";
-    }
-
-    std::cout << std::endl;
-}
-
 size_t partition(int arr[], size_t start, size_t end) {
     int pivot = arr[end-1];
     int pos = start;
