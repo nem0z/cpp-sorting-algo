@@ -47,7 +47,7 @@ int main() {
 
     print_arr(arr, 500);
 
-    time_t duration = time_sorting(quick_sort, arr, 500);
+    time_t duration = time_sorting(heap_sort, arr, 500);
     print_arr(arr, 500);
     cout << "Sorted in : " << duration << "µs" << endl;
 
