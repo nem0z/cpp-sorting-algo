@@ -1,7 +1,5 @@
 #include "algo.hpp"
 
-#include "iostream"
-
 void shift_down(int arr[], size_t len, size_t root) {
     while (2 * root + 1 < len) {
         size_t child = 2 * root + 1;
